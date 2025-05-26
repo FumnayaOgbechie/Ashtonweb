@@ -1,0 +1,477 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+  }
+  
+  nav ul li {
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  
+  nav ul li:hover {
+    color: #13572A;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #13572A;
+  }
+  /* Hero Section Styles */
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    position: relative;
+    margin-top: 5rem;
+  }
+  
+  .hero-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .carousel {
+    display: flex;
+    width: 400%;
+    animation: slideLoop 16s infinite;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  
+  @keyframes slideLoop {
+    0%   { transform: translateX(0%); }
+    20%  { transform: translateX(-100%); }
+    40%  { transform: translateX(-200%); }
+    60%  { transform: translateX(-300%); }
+    80%  { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+  }
+  
+  
+  /* About Us Section */
+.about-us {
+    padding: 40px 20px;
+    color: #333;
+  }
+  
+  /* Heading */
+  .about-us-heading h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  /* Row Flexbox */
+  .about-us .rowa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Left Column */
+  .about-us .col-1a {
+    flex: 1 1 45%;
+    min-width: 280px;
+    margin-left: 2rem;
+  }
+  .about-us .col-1a:hover{
+    transform: translateY(-5px);
+  }
+  
+  .about-us .col-1a p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-us .col-1a button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #13572A;
+    border: none;
+    border-radius: 5px;
+    border: 3px solid #13572A;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-us .col-1a button:hover {
+    background-color: #13572A;
+    color: #ffffff;
+  }
+  
+  /* Right Column */
+  .about-us .col-2a {
+    flex: 1 1 45%;
+    min-width: 280px;
+  }
+  
+  .about-us .col-2a img {
+    max-width: 100%;
+    width: 40rem;
+    height: 30rem;
+    display: block;
+  }
+  /*Services */
+  .services {
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  
+  .services-heading h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .services-heading img {
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  /* Rows and Columns */
+  .services-content {
+    margin-top: 40px;
+  }
+  
+  .row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .col-1 {
+    background-color: white;
+    padding: 20px;
+    width: 20rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .col-1:hover {
+    transform: translateY(-5px);
+  }
+  
+  .col-1 img {
+    width: 15rem;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .col-1 p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .col-1 a {
+    text-decoration: none;
+    color: #13572A;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .col-1 a:hover {
+    color: #0056b3;
+  }
+  /* Base styling */
+.events {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .events-heading h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  /* Event Lines */
+  .line {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  /* Each Event Row */
+  .row-1e {
+    display: flex;
+    align-items: center;
+    
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .row-1e:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  
+  /* Event Image */
+  .col-1e-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  /* Event Text */
+  .col-1e-text {
+    flex: 1;
+  }
+  
+  .col-1e-text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .col-1e-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .col-1e-text a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .col-1e-text a:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .row-1e {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .col-1e-image img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  .contactus {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    border-radius: 12px;
+    color: #333;
+  }
+  
+  .contactheading h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #13572A;
+  }
+  
+  /* Social Icons */
+  .socials-horizontal {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .socials-horizontal a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .socials-horizontal a:hover img {
+    transform: scale(1.2);
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: 600;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    resize: vertical;
+  }
+  
+  textarea {
+    min-height: 120px;
+  }
+  
+  button {
+    background-color: #13572A;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0f4521;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .contactus {
+      padding: 20px;
+    }
+  
+    .contactheading h2 {
+      font-size: 26px;
+    }
+  }
+  footer {
+    background-color: #373D39;
+    color: #fff;
+    padding: 50px 30px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .rowf,
+  .row2f {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .colf,
+  .colf2 {
+    flex: 1 1 200px;
+  }
+  
+  .colf-heading h3,
+  .colf h3,
+  .colf2-heading h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .colf-text ul,
+  .colf2-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .colf-text ul li,
+  .colf2-text ul li {
+    margin-bottom: 8px;
+  }
+  
+  .colf-text ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .colf-text ul li a:hover {
+    color: #ccc;
+  }
+  
+  .colf2-text p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  .colf2-text ul li {
+    font-size: 14px;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.2;
+    margin: 30px 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .rowf,
+    .row2f {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    footer {
+      text-align: center;
+    }
+  }
+  
+    
