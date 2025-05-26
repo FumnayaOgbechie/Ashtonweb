@@ -80,8 +80,9 @@
     transition: transform 0.3s ease;
 }
 @media only screen and (max-width: 600px) {
-  .event1 {
-      padding: 5px
+  .content {
+      padding: 20px 10px;
+  }
 }
 .event1:hover {
     transform: translateY(-5px);
