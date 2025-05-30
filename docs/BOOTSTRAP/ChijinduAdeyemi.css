@@ -325,7 +325,9 @@ footer {
     opacity: 0.2;
     margin: 30px 0;
   }
-  
+  .sociallink a{
+    color: #ffffff;
+  }
   /* Responsive */
   @media (max-width: 768px) {
     .rowf,
